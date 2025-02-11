@@ -81,13 +81,13 @@
               </ul>
               <div class="product_sort_sorting">
                 <span class="product_sort_sorting_title">Short by:</span>
-                <div class="product_sort_select"></div>
-                <span class="product_sort_option">Default sorting</span>
-                <img
-                  src="images/arrow_down_2.svg"
-                  alt=""
-                  class="arrow_down_2"
-                />
+                <select name="sort-by" id="sort" class="sort">
+                  <option value="default" class="product_sort_option">
+                    Default sorting
+                  </option>
+                  <option value="price-low">Price: from low to high</option>
+                  <option value="price-high">Price: from high to low</option>
+                </select>
               </div>
             </div>
             <ul class="product_list">
@@ -171,39 +171,154 @@
                 <li><a href="#">4</a></li>
                 <li>
                   <a href="#">
-                    <img src="images/arrow_down_2.svg" alt="" />
+                    <img src="images/arrow_right_2.svg" alt="" />
                   </a>
                 </li>
               </ul>
             </div>
           </div>
         </section>
-        <div class="flex_container">
-          <section class="content_flex">
-            <div class="block_1">
-              <img src="images/block_1_plant.svg" alt="" class="plant_1" />
-              <div class="text_right_1">
-                <h1>Summer cactus & succulents</h1>
-                <p>
-                  We are an online plant shop offering a wide range of cheap and
+
+        <section class="main_container_2">
+          <div class="twins_plants_container">
+            <div class="twins_plants">
+              <div class="twins_plants_img">
+                <img src="images/twins_plant_1.png" alt="" />
+              </div>
+              <div class="text_right">
+                <h1 class="text_bold_1">
+                  Summer cactus
+                  <span class="text_succulents">& succulents</span>
+                </h1>
+                <p class="small_text_1">
+                  We are an online plant shop offering a wide
+                  <span class="text_range_of"
+                    >range of cheap and trendy plants</span
+                  >
+                </p>
+                <div class="text_find_more">
+                  <a class="button_2" href="#">Find More</a>
+                </div>
+                <img src="images/arrow.svg" alt="" />
+              </div>
+            </div>
+            <div class="twins_plants">
+              <div class="twins_plants_img">
+                <img src="images/twins_plant_2.png" alt="" />
+              </div>
+
+              <div class="text_right">
+                <h1 class="text_bold_1">
+                  Styling Trends
+                  <span class="text_much_more">& much more</span>
+                </h1>
+                <p class="small_text_1">
+                  We are an online plant shop offering a wide
+                  <span class="text_range of cheap and"
+                    >range of cheap and</span
+                  >
                   trendy plants
                 </p>
                 <a class="button_2" href="#">Find More</a>
               </div>
             </div>
-            <div class="block_2">
-              <img src="images/block_2_plants.svg" alt="" class="plant_2" />
-              <div class="text_right_2">
-                <span class="text_bold_2">Styling Trends & much more</span>
-                <p>
-                  We are an online plant shop offering a wide range of cheap and
-                  trendy plants
-                </p>
-                <a class="button_2" href="#">Find More</a>
+          </div>
+
+          <section class="blog_posts">
+            <div class="blog_header">
+              <h4>Our Blog Posts</h4>
+              <p class="text_we_are_an_online">
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants.
+              </p>
+            </div>
+            <div class="blog_container">
+              <div class="blog_container_text">
+                <img src="images/1_img_flex.svg" alt="" />
+                <div class="all_text">
+                  <time datetime="2024-09-13"
+                    >September 12 I Read in 6 minutes</time
+                  >
+                  <h5>Cactus & Succulent Care Tips</h5>
+                  <p>
+                    Cacti are succulents are easy care plants for any home or
+                    patio.
+                  </p>
+                  <a href="#">Read More</a>
+                  <a href="#">
+                    <img
+                      src="images/small_arrow.svg"
+                      alt=""
+                      class="arrow_small"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="blog_container_text">
+                <img src="images/2_plants.svg" alt="" class="plants_2" />
+                <div class="all_text">
+                  <time datetime="2024-09-12"
+                    >September 13 I Read in 2 minutes</time
+                  >
+                  <h5 class="text_top_10">Top 10 Succulents for Your Home</h5>
+                  <p>Best in hanging baskets. Prefers medium to high light.</p>
+                  <a href="#">Read More</a>
+                  <a href="#">
+                    <img
+                      src="images/small_arrow.svg"
+                      alt=""
+                      class="arrow_small"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="blog_container_text">
+                <img src="images/3_img_flex.svg" alt="" />
+                <div class="all_text">
+                  <time datetime="2024-09-14"
+                    >September 15 I Read in 3 minutes</time
+                  >
+                  <h5>Cacti & Succulent Care Tips</h5>
+                  <p>
+                    Cacti and succulents thrive in containers and because most
+                    are..
+                  </p>
+                  <a href="#" class="active">Read More</a>
+                  <a href="#">
+                    <img
+                      src="images/small_arrow.svg"
+                      alt=""
+                      class="arrow_small"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="blog_container_text">
+                <img src="images/4_img_flex.svg" alt="" />
+                <div class="all_text">
+                  <time datetime="2024-09-15"
+                    >September 15 I Read in 2 minutes</time
+                  >
+                  <h5>Best Houseplants Room by Room</h5>
+                  <p>
+                    The benefits of houseplants are endless. In addition to..
+                  </p>
+                  <a href="#">Read More</a>
+                  <a href="#">
+                    <img
+                      src="images/small_arrow.svg"
+                      alt=""
+                      class="arrow_small"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </section>
-        </div>
+        </section>
       </main>
     </div>
   </body>
