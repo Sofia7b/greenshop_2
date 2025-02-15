@@ -86,8 +86,8 @@ body {
 }
 
 .product4 {
-  height: 225px;
-  width: 258px;
+  height: 250px;
+  width: 250px;
 }
 
 input {
@@ -158,11 +158,6 @@ a {
   border-radius: 6px;
 }
 
-.main_container {
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
-}
 .header_container {
   border-bottom: 1px solid rgba(70, 163, 88, 50%);
   padding-top: 30px;
@@ -265,7 +260,6 @@ h1 {
   vertical-align: middle;
 }
 .button_2 {
-  font-weight: 700;
   min-width: 140px;
   background-color: #46a358;
   color: #fff;
@@ -273,14 +267,20 @@ h1 {
   border: 1px solid #46a358;
   border-radius: 6px;
   padding: 6px 10px;
-  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  text-transform: capitalize;
 }
+
 .button_2:hover {
   background: #fff;
   color: #46a358;
 }
+
+.text_find_more {
+  text-align: right;
+}
+
 .banner_images {
   display: inline-block;
   vertical-align: middle;
@@ -402,9 +402,8 @@ h1 {
 }
 
 .sidebar {
-  padding: 14px 50px 50px;
+  padding: 0px 50px 50px;
   font-size: 15px;
-  background-color: #fbfbfb;
   flex-basis: 310px;
   flex-shrink: 0;
   display: flex;
@@ -412,7 +411,7 @@ h1 {
 }
 
 .advertising {
-  margin-bottom: 150px;
+  margin-bottom: 229px;
 }
 
 .sidebar_sale {
@@ -422,7 +421,6 @@ h1 {
 .sidebar_cat {
   list-style-type: none;
   margin: 0 0 50px;
-  padding-left: 18px;
 }
 .sidebar_cat .active {
   color: #46a358;
@@ -441,9 +439,15 @@ h1 {
 .sidebar h3 {
   margin-top: 0;
   font-size: 18px;
+  padding-left: 20px;
 }
 .sidebar + .content_sidebar {
   width: calc(100% - 310px);
+}
+
+.content_sidebar {
+  padding: 0 0 0 40px;
+  padding-bottom: 65px;
 }
 
 .product_sort_clearfix {
@@ -465,6 +469,14 @@ h1 {
   display: inline-block;
   vertical-align: middle;
 }
+
+.sort {
+  border: none;
+  color: #3d3d3d;
+  font-size: 15px;
+  line-height: 16px;
+}
+
 .product_sort_sorting_title {
   margin-right: 10px;
 }
@@ -505,7 +517,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   float: right;
-  gap: 30px;
+  gap: 37px;
+  padding-top: 31px;
 }
 
 .product_item {
@@ -515,7 +528,7 @@ h1 {
   padding-right: 33px;
 }
 .product_item h4 {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
   margin: 0;
 }
@@ -562,32 +575,139 @@ h1 {
   margin: 38px;
 }
 
-.flex_container {
-  padding: 15px 15px;
-  margin-top: 41px;
-}
-
-.content_flex {
+.twins_plants_container {
   display: flex;
+  margin-top: 29px;
+  justify-content: center;
+  gap: 34px;
+  margin-bottom: 138px;
 }
 
-.block_1 {
-  /* background: #d6d5d5; */
-  height: 250px;
+.twins_plants {
+  background: #fbfbfb;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 50%;
+  padding-right: 30px;
+  max-width: 44%;
 }
 
-.text_bold_2 {
+.text_bold_1 {
   font-weight: 900;
-  width: 150px;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: right;
 }
 
-.block_1 a,
-.block_2 a {
+.twins_plants_img img {
+  margin-top: -130px;
+  margin-right: 50px;
+}
+
+.twins_plant_first a,
+.twins_plant_seconda {
   text-transform: capitalize;
   font-weight: 300;
 }
 
-.text_right_1,
-.text_right_2 {
+.text_right {
   text-align: right;
+  padding: 37px 3px 30px;
+  max-width: 40%;
+  margin-left: -30px;
+}
+
+.small_text_1 {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  margin-left: -78px;
+}
+
+.blog_header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.text_our_blog {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.text_we_are_an_online {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.bold_text_under_picture {
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.blog_container_text p {
+  margin: 0 auto;
+  padding-top: 4px;
+  width: 268px;
+}
+
+.blog_container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.blog_container_text time {
+  color: #46a358;
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.blog_container_text a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #46a358;
+}
+
+.blog_container_text .active {
+  color: #3d3d3df1;
+  font-weight: 700;
+}
+
+.blog_container_text,
+.read_more_active a {
+  text-decoration: none;
+  color: inherit;
+}
+.blog_container_text a:hover {
+  color: #46a358;
+}
+
+.arrow_small {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+
+.all_text {
+  padding: 4px 11px 4px 15px;
+}
+
+.plants_2 {
+  width: 268px;
+}
+
+.blog_container_text .blog_container_text {
+  width: 268px;
+  height: 362px;
 }
