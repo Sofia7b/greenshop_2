@@ -771,6 +771,12 @@ h1 {
   font-size: 14px;
 }
 
+.white_arrow {
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+}
+
 .bold_text_under_picture {
   text-align: left;
   font-weight: 700;
