@@ -27,8 +27,9 @@
 body {
   font-family: "Cera Pro", sans-serif;
   line-height: 1.7;
-  font-size: 16px;
   color: #3d3d3d;
+  display: flex;
+  justify-content: center;
 }
 
 .login-text {
@@ -407,8 +408,7 @@ h1 {
 }
 
 .sidebar {
-  padding: 0px 50px 50px;
-  padding: 0px 50px 50px;
+  padding: 0px 10px 50px 50px;
   font-size: 15px;
   flex-basis: 310px;
   flex-shrink: 0;
@@ -423,6 +423,11 @@ h1 {
 
 .sidebar_sale {
   margin-top: auto;
+}
+
+.main_container {
+  width: 100%;
+  max-width: 1211px;
 }
 
 .sidebar_cat {
@@ -454,12 +459,6 @@ h1 {
 }
 
 .content_sidebar {
-  padding: 0 0 0 40px;
-  padding-bottom: 65px;
-}
-
-.content_sidebar {
-  padding: 0 0 0 40px;
   padding-bottom: 65px;
 }
 
@@ -537,17 +536,14 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   float: right;
-  gap: 37px;
-  padding-top: 31px;
-  gap: 37px;
+  gap: 30px;
   padding-top: 31px;
 }
 
 .product_item {
-  width: 33.33%;
-  width: 258px;
   height: 350px;
   padding-right: 33px;
+  width: calc(33.33% - 30px);
 }
 .product_item h4 {
   font-weight: normal;
@@ -629,8 +625,6 @@ h1 {
 }
 
 .twins_plants_img img {
-  margin-top: -130px;
-  margin-right: 50px;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -639,7 +633,7 @@ h1 {
 
 .twins_plants_img img {
   margin-top: -130px;
-  margin-right: 50px;
+  margin-right: 55px;
 }
 
 .twins_plant_first a,
@@ -655,13 +649,7 @@ h1 {
   margin-left: -30px;
 }
 
-.small_text_1 {
-  font-size: 14px;
-  line-height: 24px;
-}
-
 .text_right {
-  text-align: right;
   padding: 37px 3px 30px;
   max-width: 40%;
   margin-left: -30px;
@@ -671,7 +659,7 @@ h1 {
   font-size: 14px;
   line-height: 24px;
   text-align: right;
-  margin-left: -78px;
+  margin-left: -100px;
 }
 
 .blog_header {
@@ -689,11 +677,6 @@ h1 {
   margin: 0;
 }
 
-.text_we_are_an_online {
-  margin: 0;
-  margin-top: 15px;
-}
-
 .bold_text_under_picture {
   text-align: left;
   font-weight: 700;
@@ -705,6 +688,11 @@ h1 {
   margin: 0 auto;
   padding-top: 4px;
   width: 268px;
+}
+
+.text_small {
+  line-height: 22px;
+  font-size: 14px;
 }
 
 .blog_container {
@@ -779,6 +767,8 @@ h1 {
 .text_we_are_an_online {
   margin: 0;
   margin-top: 15px;
+  line-height: 24px;
+  font-size: 14px;
 }
 
 .bold_text_under_picture {
@@ -786,12 +776,6 @@ h1 {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-}
-
-.blog_container_text p {
-  margin: 0 auto;
-  padding-top: 4px;
-  width: 268px;
 }
 
 .blog_container {
