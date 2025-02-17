@@ -49,7 +49,6 @@ body {
   display: inline-block;
   border-left: 1px solid #848484;
   margin: 0 10px;
-  height: 16px;
   width: 2px;
 }
 
@@ -203,16 +202,16 @@ input {
 
 .header_list {
   list-style-type: none;
-  text-align: center;
   text-decoration: none;
   color: #3d3d3d;
   padding-left: 0;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
-.header_list li {
-  margin: 0 15px;
-}
+
 .header_list li a {
   width: 100%;
 }
@@ -247,9 +246,10 @@ h1 {
 
 .header_list .link:hover {
   border-bottom: solid 3px #46a358;
+  position: relative;
 }
 
-.header_nav li :after,
+/* .header_nav li:after,
 .active_1 .link link_2 {
   content: "";
   width: 45px;
@@ -258,7 +258,7 @@ h1 {
   position: absolute;
   bottom: -2px;
   right: 834px;
-}
+} */
 
 .link_2 {
   font-weight: 700;
@@ -446,10 +446,11 @@ h1 {
 
 .content_holder_clearfix {
   display: flex;
+  margin-bottom: 94px;
 }
 
 .sidebar {
-  padding: 0px 10px 50px 50px;
+  padding: 0px 10px 0px 50px;
   font-size: 15px;
   flex-basis: 310px;
   flex-shrink: 0;
@@ -458,7 +459,7 @@ h1 {
 }
 
 .advertising {
-  margin-bottom: 190px;
+  margin-bottom: 170px;
   position: relative;
   right: 74px;
 }
@@ -495,14 +496,9 @@ h1 {
   margin-top: 0;
   font-size: 18px;
   padding-left: 20px;
-  padding-left: 20px;
 }
 .sidebar + .content_sidebar {
   width: calc(100% - 310px);
-}
-
-.content_sidebar {
-  padding-bottom: 65px;
 }
 
 .product_sort_clearfix {
@@ -676,10 +672,10 @@ h1 {
 
 .twins_plants_container {
   display: flex;
-  margin-top: 29px;
+  padding-top: 75px;
   justify-content: center;
   gap: 34px;
-  margin-bottom: 138px;
+  padding-bottom: 138px;
 }
 .twins_plants {
   background: #fbfbfb;
@@ -700,14 +696,8 @@ h1 {
 }
 
 .twins_plants_img img {
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-  text-align: right;
   margin-top: -130px;
-  margin-right: 55px;
-  position: relative;
-  left: -20px;
+  margin-right: 105px;
 }
 
 .twins_plant_first a,
@@ -720,36 +710,12 @@ h1 {
   text-align: right;
   padding: 37px 3px 30px;
   max-width: 40%;
-  margin-left: -30px;
+  margin-left: -140px;
 }
 
 .text_right p {
   font-size: 14px;
   line-height: 24px;
-  text-align: right;
-  margin-left: -100px;
-}
-
-.blog_header {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 35px;
-  align-items: center;
-  flex-flow: column wrap;
-}
-
-.text_our_blog {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 16px;
-  margin: 0;
-}
-
-.bold_text_under_picture {
-  text-align: left;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
 }
 
 .blog_container_text p {
@@ -770,11 +736,6 @@ h1 {
   font-size: 14px;
 }
 
-.blog_container_text,
-.read_more_active a {
-  text-decoration: none;
-  color: inherit;
-}
 .blog_container_text a:hover {
   color: #46a358;
 }
@@ -812,6 +773,7 @@ h1 {
   font-size: 30px;
   line-height: 16px;
   margin: 0;
+  text-transform: capitalize;
 }
 
 .text_we_are_an_online {
@@ -847,7 +809,8 @@ h1 {
   font-size: 14px;
 }
 
-.blog_container_text a {
+.blog_container_text .active,
+.blog_container_text .active_2 {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -939,4 +902,95 @@ h1 {
 
 .product_img:hover .product_icon {
   display: flex;
+}
+
+.submenu {
+  background: #edf6ee;
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  width: 188px;
+  left: 55%;
+  transform: translateX(-55%);
+  display: none;
+}
+
+.text_submenu_1 {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #3d3d3d;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.header_list li:hover {
+  display: block;
+}
+
+.header_list > li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.header_list li:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  padding: 8px 14px;
+  display: block;
+}
+
+.submenu li {
+  border-bottom: 1px solid #000000;
+}
+
+.submenu a:hover {
+  background: #1a712a;
+  color: #ffffff;
+}
+
+.frame:after {
+  content: "";
+  width: 10px;
+  border-width: 2px 2px 0 0;
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+.frame:hover:after {
+  transform: rotate(225deg);
+}
+
+.second_menu {
+  list-style-type: none;
+  top: 0;
+  left: 100%;
+  background: #edf6ee;
+  width: 178px;
+  position: absolute;
+  padding: 0;
+  display: none;
+}
+
+.text_second_menu {
+  text-decoration: none;
+  color: #3d3d3d;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.submenu_category:hover .second_menu {
+  display: block;
+}
+
+.submenu_category li:has(ul) {
+  background-image: ("...images/frame 9.png");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.new_line {
+  display: block;
 }
