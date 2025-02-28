@@ -34,6 +34,52 @@ body {
   justify-content: center;
 }
 
+/* icons */
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?bux2e8");
+  src: url("../fonts/icomoon.eot?bux2e8#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?bux2e8") format("truetype"),
+    url("../fonts/icomoon.woff?bux2e8") format("woff"),
+    url("../fonts/icomoon.svg?bux2e8#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youtube:before {
+  content: "\e900";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin:before {
+  content: "\eaca";
+}
+
 .login-text {
   color: #2d2d2d;
   font-size: 20px;
@@ -695,6 +741,9 @@ li:hover .menu {
   color: #fff;
 }
 
+.icon-arrow-thin-right {
+}
+
 .number_1 {
   list-style-type: none;
   margin: 0;
@@ -1082,8 +1131,7 @@ li:hover .menu {
 
 .footer-box {
   flex: 1;
-  padding: 20px;
-  text-align: left;
+  padding: 25px;
 }
 
 .footer-box h4 {
@@ -1144,28 +1192,14 @@ li:hover .menu {
 
 .contact-bar {
   display: flex;
-  justify-content: space-between;
   background: linear-gradient(to right, #edf6ef, #52c368);
   padding: 33px 22px;
   align-items: center;
-}
-.contact-item1,
-.contact-item2 a {
-  color: inherit;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 22px;
+  gap: 124px;
 }
 
-.contact-item1 img {
-  position: relative;
-  top: 19px;
-  right: 126px;
-}
-
-.contact-item2 {
-  position: relative;
-  right: 194px;
+.address_continue {
+  display: block;
 }
 
 .list_my_account1 a:hover,
@@ -1182,34 +1216,13 @@ li:hover .menu {
 .contact-item a:hover,
 .contact-item1 a:hover,
 .contact-item2 a:hover {
-  color: #0f4bac;
-}
-
-.gmail {
-  position: relative;
-  bottom: 17px;
-  right: 96px;
-  padding: 0;
-  margin: 0;
+  color: #ffffff;
 }
 
 .blog_posts {
   margin-bottom: 100px;
   max-width: 1211px;
   width: 100%;
-}
-
-.all_text_my_account {
-  list-style-type: none;
-  font-size: 14px;
-  line-height: 30px;
-  text-decoration: none;
-  color: #3d3d3d;
-}
-
-.all_content_information {
-  display: flex;
-  justify-content: flex-start;
 }
 
 .icon {
@@ -1220,7 +1233,7 @@ li:hover .menu {
   background: #fbfbfb;
 }
 
-.footer-container {
+.footer-section {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -1232,24 +1245,24 @@ li:hover .menu {
   margin: 0px;
 }
 
-.address {
-  font-size: 14px;
+.contact_details {
+  display: flex;
+  justify-content: flex-start;
   line-height: 22px;
-  position: relative;
-  right: 27px;
-  bottom: 14px;
-  padding: 0;
-  margin: 0;
+  font-size: 14px;
+  gap: 65px;
+  align-items: center;
+  width: 63%;
 }
 
-.icon_location {
-  position: relative;
-  right: 59px;
-  top: 25px;
+.contact_details > div {
+  margin: 0 10px;
 }
 
-.address_continue {
-  display: block;
+.contact-item img,
+.contact-item1 img,
+.contact-item2 img {
+  margin-right: 9px;
 }
 
 .footer-section2 h5 {
@@ -1266,7 +1279,6 @@ li:hover .menu {
 }
 .footer-section2 > li,
 a {
-  line-height: 30px;
   text-decoration: none;
   color: inherit;
   opacity: 1;
@@ -1284,31 +1296,27 @@ a {
   margin: 0;
 }
 
-.all_text_my_account a {
-  font-size: 14px;
-  line-height: 30px;
-}
-
-.list_my_account {
-  padding: 0;
-}
-
 .list_my_account1,
 .list_my_account2,
 .list_my_account3 {
-  padding: 0;
+  padding: 8px 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 30px;
+  color: #3d3d3d;
+}
+
+.content_info {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 33px 25px;
+  border-bottom: 1px solid rgba(70, 163, 88, 50%);
 }
 
 .footer_section3 {
   padding-right: 171px;
-}
-
-.all_text_my_account a {
-  padding-bottom: 8px;
-}
-
-.all_content_information {
-  padding: 33px 23px;
 }
 
 .confidentiality {
@@ -1318,7 +1326,7 @@ a {
 }
 
 .footer_section1 {
-  padding-right: 174px;
+  padding-right: 188px;
 }
 
 .footer_section2 {
@@ -1327,6 +1335,8 @@ a {
 
 .img_bank_cards {
   margin-top: 15px;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
 .all_icon {
@@ -1335,4 +1345,33 @@ a {
   padding: 0;
   margin-top: 20px;
   margin-bottom: 33px;
+  gap: 10px;
+}
+
+.social_list_link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: rgba(70, 163, 88, 0.6);
+  border: 1px solid #46a35987;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #f0f0f0;
+  border: solid 2px transparent;
+  transition: all 0.3s ease;
+}
+
+.img_bank_cards:hover {
+  transform: scale(1.1);
+}
+
+.social_list_link:hover {
+  color: #1a712a;
+  font-size: 19px;
+}
+
+.all_content_information {
+  display: flex;
+  width: 72%;
 }
