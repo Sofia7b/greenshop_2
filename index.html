@@ -78,10 +78,15 @@
               <li><a class="link" href="#">Blogs</a></li>
             </ul>
           </nav>
-          <a class="button_login" href="registration.html">
-            <img class="Logout" src="images/Logout.svg" alt="" />
-            Login
-          </a>
+          <div class="button_container">
+            <a class="button_login" href="registration.html">
+              <img class="Logout" src="images/Logout.svg" alt="" />
+              <span>Login</span>
+            </a>
+            <a class="button_login1" href="burger.html">
+              <span>Burger</span>
+            </a>
+          </div>
         </div>
       </header>
       <main>
@@ -110,15 +115,15 @@
           <aside class="sidebar">
             <p>Categories</p>
             <ul class="sidebar_cat">
-              <li><a href="#">House Plants</a></li>
-              <li><a href="#">Potter Plants</a></li>
-              <li><a href="#">Seeds</a></li>
-              <li><a href="#">Small Plants</a></li>
-              <li><a href="#">Big Plants</a></li>
-              <li><a href="#">Succulents</a></li>
-              <li><a href="#">Trerrariums</a></li>
-              <li><a href="#">Gardening</a></li>
-              <li><a href="#">Accessories</a></li>
+              <li class="active_house_plants"><a href="#">House Plants</a></li>
+              <li class="plants"><a href="#">Potter Plants</a></li>
+              <li class="plants"><a href="#">Seeds</a></li>
+              <li class="plants"><a href="#">Small Plants</a></li>
+              <li class="plants"><a href="#">Big Plants</a></li>
+              <li class="plants"><a href="#">Succulents</a></li>
+              <li class="plants"><a href="#">Trerrariums</a></li>
+              <li class="plants"><a href="#">Gardening</a></li>
+              <li class="plants"><a href="#">Accessories</a></li>
             </ul>
             <div class="sidebar_sale">
               <img
@@ -132,9 +137,11 @@
             <div class="product_sort_clearfix">
               <div class="product_sort_filter_1">
                 <ul class="product_sort_filter">
-                  <li class="#"><a href="#">All Plants</a></li>
-                  <li><a href="#">New Arrivals</a></li>
-                  <li><a href="#">Sale</a></li>
+                  <li class="all_plants"><a href="#">All Plants</a></li>
+                  <li class="product_sort_filter_item">
+                    <a href="#">New Arrivals</a>
+                  </li>
+                  <li class="product_sort_filter_item"><a href="#">Sale</a></li>
                 </ul>
               </div>
               <div class="product_sort_sorting">
@@ -264,7 +271,7 @@
 
               <li class="product_item">
                 <div class="product_img">
-                  <img src="images/product4.svg" alt="" class="product4" />
+                  <img src="images/product_4main.png" alt="" class="product4" />
                   <ul class="product_icon">
                     <li>
                       <a href="#" class="product_icon_link">
@@ -472,7 +479,7 @@
                 <span class="price">$39.00</span>
               </li>
             </ul>
-            <div class="pages">
+            <div class="pages_main">
               <ul class="pages">
                 <li class="number_1 active"><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
@@ -507,7 +514,7 @@
                 <a class="button_2" href="#"
                   >Find More
                   <img
-                    src="images/white_arrow _right.svg"
+                    src="images/white_arrow_right.svg"
                     alt=""
                     class="white_arrow"
                   />
@@ -530,7 +537,7 @@
               <a class="button_2" href="#"
                 >Find More
                 <img
-                  src="images/white_arrow _right.svg"
+                  src="images/white_arrow_right.svg"
                   alt=""
                   class="white_arrow"
                 />
@@ -631,14 +638,16 @@
                 <p class="text_small">
                   The benefits of houseplants are endless. In addition to..
                 </p>
-                <a href="#" class="active"
-                  >Read More
-                  <img
-                    src="images/small_arrow.svg"
-                    alt=""
-                    class="arrow_small"
-                  />
-                </a>
+                <div class="active_road_more_main2">
+                  <a href="#" class="active"
+                    >Read More
+                    <img
+                      src="images/small_arrow.svg"
+                      alt=""
+                      class="arrow_small"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -706,7 +715,7 @@
               <div class="contact-item2">
                 <a href="tel:+88 01911 717 490">
                   <img src="images/calling(main).svg" alt="" />
-                  +88 01911 717 490
+                  +8801911717490
                 </a>
               </div>
             </address>
@@ -822,6 +831,7 @@
                   </a>
                 </li>
               </ul>
+
               <h5 class="footer_text_bold">We accept</h5>
               <a href="#">
                 <img
